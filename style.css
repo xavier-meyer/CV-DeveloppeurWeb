@@ -55,6 +55,18 @@ main img.icons-1{
     height: auto;
     object-fit: contain;
 }
+
+/*card button*/
+
+.card-body {
+    border-radius: 5px;
+    width:400px;
+    box-shadow: 0px 5px 20px #999;
+    background-color: white;
+}
+
+
+
 .image img {
 /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
 transition: all 1s ease; 
@@ -62,6 +74,7 @@ transition: all 1s ease;
 .image:hover img{
     transform: scale(1.1);
 }
+
 /*class perso*/
 .text-align-justify{
     text-align: justify;

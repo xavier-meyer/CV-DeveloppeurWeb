@@ -43,201 +43,229 @@
                     </ul>    
                 </div>
             </div>  
-        </section>
-        <section class="margin-p">
+        <section>
             <div class="row">
-                <div>
-                    <!-- Button modal Formation --> 
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal" id="button-formation">
+                <div class="card col-lg-4">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <!--icone -->
+                        <img src="./images/icones/diplome.png" class="icons-1">
+                        <!-- Button modal Formation -->
+                        <button type="button" class="btn btn-secondary my-3" data-bs-toggle="modal" data-bs-target="#formationModal" id="button-formation">
                         Formation
-                    </button>
-                    <!-- Button modal Compétences  -->
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#competencesModal"id="button-competences">
-                    Compétences
-                </button>
-                    <!-- Button modal Expériences  -->
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal" id="button-experiences">
-                        Expériences
-                    </button>
-                    <!-- Button modal Portfolio -->
-                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal" id="button-portfolio">
-                        Portfolio
-                    </button>
-                    <!-- Button modal Me découvrir -->
-                    <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#contactModal" id="button-decouvrir">
-                        Me découvrir
-                    </button>
-                </div>
-                    <!-- Modalformation -->
-                    <div class="modal fade" id="formationModal" tabindex="-1" aria-labelledby="formationModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <img src="./images/icones/diplome.png" class="icons-1 my-3">
-                                    <h2 class="modal-title" id="formationModalLabel">Formation</h2>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body mx-0 justify-content-around row">
-                                    <div class="card col-10 col-xl-3">
-                                        <div class="card-body">
-                                            <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Développeur web et web mobile</h3>
-                                            <h4 class="card-subtitle mb-2 text-muted padding10">IFPA Miribel de avril 2022 à mai 2023:</h4>
-                                            <ul class="card-text">
-                                                <li><img src="./images/icones/star.png"class="icons my-2">découvrir les métiers du digital, du codage.</li>
-                                                <li><img src="./images/icones/star.png"class="icons my-2">acquérir de la culture informatique.</li>
-                                                <li><img src="./images/icones/star.png"class="icons my-2">accomplir un projet collaboratif.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card col-10 col-xl-3 offset-xl-1">
-                                        <div class="card-body">
-                                            <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Autoformation en web </h3>
-                                            <h4 class="card-subtitle mb-2 text-muted padding10">Openclassrooms en 2019:</h4>
-                                            <ul class="card-text">
-                                                <li><img src="./images/icones/star.png"class="icons my-2">découverte de HTML.</li>
-                                                <li><img src="./images/icones/star.png"class="icons my-2">découverte de CSS.</li>
-                                                <li><img src="./images/icones/star.png"class="icons my-2">découverte de JAVASCRIPT.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="card col-10 col-xl-3 offset-xl-1">
-                                        <div class="card-body">
-                                            <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Diplômes</h3>
-                                            <h4 class="card-subtitle mb-2 text-muted padding10">BTS Mécanique et Automatismes Industriels:</h4>
-                                            <ul>
-                                                <p><img src="./images/icones/star.png"class="icons my-2">obtenu en 2012 à Ambérieu en bugey.</p>
-                                            </ul>
-                                            <ul><img src="./images/icones/star.png"class="icons my-2">Bac S option sciences de l'ingénieur.</ul>
-                                            <ul>
-                                                <p><img src="./images/icones/star.png"class="icons my-2">obtenu en 2010 à Ambérieu en bugey.</p>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer d-flex justify-content-around">
-                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#competencesModal">
-                                        Compétences
-                                    </button>
-                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
-                                        Expériences
-                                    </button>
-                                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
-                                        Portfolio
-                                    </button>
-                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
-                                        Me contacter
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
-                <!-- ModalCompétences -->
-                <div class="modal fade" id="competencesModal" tabindex="-1" aria-labelledby="competencesModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img src="./images/icones/competences.png" class="icons-1 my-3">
-                                <h2 class="modal-title" id="competencesModalLabel">Compétences</h2>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">    
-                                <div class="card col-10 col-xl-3">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><img src="./images/icones/html.png"class="icons my-2">HTML</li>
-                                            <li><img src="./images/icones/css.png"class="icons my-2">CSS</li>
-                                            <li><img src="./images/icones/boostrap.png"class="icons my-2">BOOTSTRAP</li>
-                                            <li><img src="./images/icones/javascript.png"class="icons my-2">JAVASCRIPT</li>
-                                            <li><img src="./images/icones/wordpress.png"class="icons my-2">WORDPRESS</li>
-                                            <li><img src="./images/icones/github.png"class="icons my-2">GITHUB</li>
-                                            <li><img src="./images/icones/serveur-FTP.png"class="icons my-2">Déploiements serveur FTP</li>  
-                                            <li><img src="./images/icones/serveur-SSH.png"class="icons my-2">Déploiements serveur SSH</li>   
-                                            <li><img src="./images/icones/whimsical.png"class="icons my-2">Whimsical</li>  
-                                        </ul>
-                                    </div>     
-                                </div>          
-                            </div>  
-                            <div class="modal-footer d-flex justify-content-around">
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
-                                    Formation
-                                </button>
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
-                                    Expériences
-                                </button> 
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
-                                    Portfolio
-                                </button>
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
-                                    Me contacter
-                                </button>
-                            </div> 
-                        </div>
+                <div class="card col-lg-4">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <!--icone -->
+                        <img src="./images/icones/competences.png" class="icons-1">
+                        <!-- Button modal Compétences  -->
+                        <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#competencesModal"id="button-competences">
+                            Compétences
+                        </button>
                     </div>
                 </div>
-                <!-- Modalexpériences -->
-                <div class="modal fade" id="experiencesModal" tabindex="-1" aria-labelledby="experiencesModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img src="./images/icones/experiences.png" class="icons-1 my-3">
-                                <h3 class="modal-title" id="experiencesModalLabel">Expériences</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body mx-0 justify-content-around row">    
-                                <div class="card col-10 col-xl-3">
-                                    <div class="card-body">
-                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Développeur web</h3> 
-                                        <h4 class="card-subtitle mb-2 text-muted padding10">House of Code,Lyon 2019:</h4>
-                                        <h4 class="card-subtitle mb-2 text-muted padding10">semaine de projet: création d'une application mobile</h4>
-                                        <ul class="card-text">
-                                            <li><img src="./images/icones/star.png"class="icons my-2">Réflexion, choix d'un théme avec lean-canvas.</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">Répartition tâches entre mock-up, business-plan et plan marketing.</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">Travail sur le business-plan comment rentabiliser l'appli sur le long terme.</li>
-                                        </ul>
-                                    </div>     
-                                </div>    
-                                <div class="card col-10 col-xl-3">
-                                    <div class="card-body">
-                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Missions intérim industrie et agriculture<br>Beynost</h3> 
-                                        <h4 class="card-subtitle mb-2 text-muted padding10">2013 à 2018:</h4>
-                                        <ul class="card-text">
-                                            <li><img src="./images/icones/star.png"class="icons my-2">Aide-mécanicien maintenance,EMMI pour Toray Film Plastic,.</li>
-                                            <li><img src="./images/icones/star.png"class="icons my-2">Opérateur polyvalent atelier, Le Fumet des Dombes, St André de Corcy.</li>
-                                        </ul>
-                                    </div>     
-                                </div>  
-                                <div class="card col-10 col-xl-3">
-                                    <div class="card-body">
-                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Stages dans le cadre du BTS</h3> 
-                                        <h4 class="card-subtitle mb-2 text-muted padding10">2010 à 2011:</h4>
-                                        <ul class="card-text">
-                                            <ul>
-                                                <li><img src="./images/icones/star.png"class="icons my-2">Automaticien chez ELECTRICFIL AUTOMOTIVE à saint Maurice de Beynost pendant 2 semaines.</li>
-                                                <li><img src="./images/icones/star.png"class="icons my-2">Usineur plastiques chez DORLON SAS USINAGES PLASTIQUES à Miribel.</li>
-                                            </ul>
-                                        </ul>
-                                    </div>     
-                                </div>   
-                            </div>   
-                            <div class="modal-footer d-flex justify-content-around">
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
-                                    Formation
-                                </button>
-                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#competencesModal">
-                                    Compétences
-                                </button>
-                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
-                                    Portfolio
-                                </button>
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
-                                    Me contacter
-                                </button>
-                            </div>   
-                        </div>        
+                <div class="card col-lg-3">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <!--icone -->
+                        <img src="./images/icones/experiences.png" class="icons-1">
+                        <!-- Button modal Expériences  -->
+                        <button type="button" class="btn btn-danger my-3" data-bs-toggle="modal" data-bs-target="#experiencesModal" id="button-experiences">
+                            Experiences
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-lg-3">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <!--icone -->
+                        <img src="./images/icones/portfolio.png" class="icons-1">
+                        <!-- Button modal porfolio  -->
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal" id="button-portfolio">
+                            Portfolio
+                        </button>
+                    </div>
+                </div>
+                <div class="card col-lg-3">
+                    <div class="card-body d-flex justify-content-center align-items-center flex-column">
+                        <!--icone -->
+                        <img src="./images/icones/portfolio.png" class="icons-1">
+                        <!-- Button modal Me découvrir  -->
+                        <button type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#contactModal" id="button-decouvrir">
+                            Me découvrir
+                        </button>
                     </div>
                 </div>
             </div>
+        </section>
+                <!-- Modalformation -->
+                <div class="modal fade" id="formationModal" tabindex="-1" aria-labelledby="formationModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img src="./images/icones/diplome.png" class="icons-1 my-3">
+                                <h2 class="modal-title" id="formationModalLabel">Formation</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body mx-0 justify-content-around row">
+                                <div class="card col-10 col-xl-3">
+                                    <div class="card-body">
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Développeur web et web mobile</h3>
+                                        <h4 class="card-subtitle mb-2 text-muted padding10">IFPA Miribel de avril 2022 à mai 2023:</h4>
+                                        <ul class="card-text">
+                                            <li><img src="./images/icones/star.png"class="icons my-2">découvrir les métiers du digital, du codage.</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">acquérir de la culture informatique.</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">accomplir un projet collaboratif.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card col-10 col-xl-3 offset-xl-1">
+                                    <div class="card-body">
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Autoformation en web </h3>
+                                        <h4 class="card-subtitle mb-2 text-muted padding10">Openclassrooms en 2019:</h4>
+                                        <ul class="card-text">
+                                            <li><img src="./images/icones/star.png"class="icons my-2">découverte de HTML.</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">découverte de CSS.</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">découverte de JAVASCRIPT.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card col-10 col-xl-3 offset-xl-1">
+                                    <div class="card-body">
+                                        <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Diplômes</h3>
+                                        <h4 class="card-subtitle mb-2 text-muted padding10">BTS Mécanique et Automatismes Industriels:</h4>
+                                        <ul>
+                                            <p><img src="./images/icones/star.png"class="icons my-2">obtenu en 2012 à Ambérieu en bugey.</p>
+                                        </ul>
+                                        <ul><img src="./images/icones/star.png"class="icons my-2">Bac S option sciences de l'ingénieur.</ul>
+                                        <ul>
+                                            <p><img src="./images/icones/star.png"class="icons my-2">obtenu en 2010 à Ambérieu en bugey.</p>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-around">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                    Compétences
+                                </button>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                    Expériences
+                                </button>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                    Portfolio
+                                </button>
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                    Me contacter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- ModalCompétences -->
+            <div class="modal fade" id="competencesModal" tabindex="-1" aria-labelledby="competencesModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="./images/icones/competences.png" class="icons-1 my-3">
+                            <h2 class="modal-title" id="competencesModalLabel">Compétences</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex justify-content-center">
+                            <div class="card col-10 col-xl-3">
+                                <div class="card-body">
+                                    <ul>
+                                        <li><img src="./images/icones/html.png"class="icons my-2">HTML</li>
+                                        <li><img src="./images/icones/css.png"class="icons my-2">CSS</li>
+                                        <li><img src="./images/icones/boostrap.png"class="icons my-2">BOOTSTRAP</li>
+                                        <li><img src="./images/icones/javascript.png"class="icons my-2">JAVASCRIPT</li>
+                                        <li><img src="./images/icones/wordpress.png"class="icons my-2">WORDPRESS</li>
+                                        <li><img src="./images/icones/github.png"class="icons my-2">GITHUB</li>
+                                        <li><img src="./images/icones/serveur-FTP.png"class="icons my-2">Déploiements serveur FTP</li>
+                                        <li><img src="./images/icones/serveur-SSH.png"class="icons my-2">Déploiements serveur SSH</li>
+                                        <li><img src="./images/icones/whimsical.png"class="icons my-2">Whimsical</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-around">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                                Formation
+                            </button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#experiencesModal">
+                                Expériences
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                Portfolio
+                            </button>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Me contacter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modalexpériences -->
+            <div class="modal fade" id="experiencesModal" tabindex="-1" aria-labelledby="experiencesModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="./images/icones/experiences.png" class="icons-1 my-3">
+                            <h3 class="modal-title" id="experiencesModalLabel">Expériences</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body mx-0 justify-content-around row">
+                            <div class="card col-10 col-xl-3">
+                                <div class="card-body">
+                                    <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Développeur web</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted padding10">House of Code,Lyon 2019:</h4>
+                                    <h4 class="card-subtitle mb-2 text-muted padding10">semaine de projet: création d'une application mobile</h4>
+                                    <ul class="card-text">
+                                        <li><img src="./images/icones/star.png"class="icons my-2">Réflexion, choix d'un théme avec lean-canvas.</li>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">Répartition tâches entre mock-up, business-plan et plan marketing.</li>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">Travail sur le business-plan comment rentabiliser l'appli sur le long terme.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card col-10 col-xl-3">
+                                <div class="card-body">
+                                    <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Missions intérim industrie et agriculture<br>Beynost</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted padding10">2013 à 2018:</h4>
+                                    <ul class="card-text">
+                                        <li><img src="./images/icones/star.png"class="icons my-2">Aide-mécanicien maintenance,EMMI pour Toray Film Plastic,.</li>
+                                        <li><img src="./images/icones/star.png"class="icons my-2">Opérateur polyvalent atelier, Le Fumet des Dombes, St André de Corcy.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card col-10 col-xl-3">
+                                <div class="card-body">
+                                    <h3><img src="./images/icones/rocket-1.png"class="icons-1 my-2 card-title padding10">Stages dans le cadre du BTS</h3>
+                                    <h4 class="card-subtitle mb-2 text-muted padding10">2010 à 2011:</h4>
+                                    <ul class="card-text">
+                                        <ul>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">Automaticien chez ELECTRICFIL AUTOMOTIVE à saint Maurice de Beynost pendant 2 semaines.</li>
+                                            <li><img src="./images/icones/star.png"class="icons my-2">Usineur plastiques chez DORLON SAS USINAGES PLASTIQUES à Miribel.</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-around">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formationModal">
+                                Formation
+                            </button>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#competencesModal">
+                                Compétences
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                                Portfolio
+                            </button>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                Me contacter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             <!-- ModalPortfolio -->
                 <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
