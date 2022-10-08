@@ -8,7 +8,7 @@ body{
 body::before{
     background: rgba(0,0,0,0.7);
     content: "";
-    display: block;
+    display:block;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -68,8 +68,6 @@ main img.icons-1{
 .card {
     background-color: transparent;
 }
-
-
 
 .image img {
 /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
